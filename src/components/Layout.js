@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Contact from "./Contact";
 // import Main from "./Main";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <Header />
       <Contact />
       {/* <Main /> */}
+      <Footer />
     </div>
   );
 };

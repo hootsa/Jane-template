@@ -33,27 +33,19 @@ const Contact = () => {
     required: "Full Name is required",
   });
 
-  //   useEffect(() => {
-  //     const subscription = watch((value, { name, type }) =>
-  //       console.log(value, name, type, "XXXXXXXX")
-  //     );
-  //     return () => subscription.unsubscribe();
-  //   }, [watch]);
-
   return (
-    <div className="container max-w-6xl mx-auto px-6 flex flex-row flex-wrap lg:flex-nowrap gap-12 justify-between ">
-      <div className="bg-slate-100 ">
-        <div className="w-full lg:basis-1/2 max-w-2xl px-8 pt-32 mb-14">
-          <h2 className="font-semibold text-5xl">
-            How can I help you? <br />
-            Let’s get in touch👋
-          </h2>
-          <img
-            src="https://jane-next-obfuscated-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact.b33f4d23.jpg&w=1920&q=75"
-            className="pt-32 rounded-lg"
-          ></img>
-        </div>
+    <div className="container max-w-6xl mx-auto px-6 flex flex-row flex-wrap lg:flex-nowrap gap-12 justify-between mb-40">
+      <div className="w-full lg:basis-1/2 max-w-2xl px-8 pt-20 mb-14 h-2/3 bg-slate-100">
+        <h2 className="font-semibold text-5xl">
+          How can I help you? <br />
+          Let’s get in touch👋
+        </h2>
+        <img
+          src="https://jane-next-obfuscated-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontact.b33f4d23.jpg&w=1920&q=75"
+          className="mt-32 rounded-2xl mb-14"
+        ></img>
       </div>
+
       <div className="w-full lg:basis-1/2 max-w-2xl px-8 pt-32 mb-14">
         <h3 className="text-3xl	font-semibold	">
           Fill our the form below to get started
@@ -170,7 +162,7 @@ const Contact = () => {
               <label htmlFor="other">Other</label>
             </div>
           </div>
-          <p className="text-sm text-red-400 font-extralight h-6">
+          <p className="text-sm text-red-400 font-extralight h-6 mt-4">
             {!isCheckboxValid && "At least select one service"}
           </p>
           <div className="mt-14 mb-14 border-t">
