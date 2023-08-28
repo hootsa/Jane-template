@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Contact from "./components/Contact";
-import Main from "./components/Main";
+import Contact from "./screens/Contact";
+import Main from "./screens/Main";
 import "./index.css";
-import Layout from "./components/Layout/Layout";
-import NotFoundPage from "./components/Layout/404Page";
+import Layout from "./components/Layout";
+import NotFoundPage from "./components/404Page";
 
 function App() {
   return (

@@ -1,7 +1,8 @@
 import React from "react";
-import navigations from "../../../constants/navigations";
+import navigations from "../../constants/navigations";
 import Dropdown from "./dropdown";
 import { Link } from "react-router-dom";
+import Logo from "../../images/logo.jpg";
 
 const Header = () => {
   return (
@@ -9,10 +10,7 @@ const Header = () => {
       <nav className="container max-w-6xl mx-auto px-6 flex flex-row items-center align justify-between py-6">
         <div className="flex">
           <a href="#">
-            <img
-              src="https://jane-next-obfuscated-preview.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d2e4816a.png&w=256&q=75"
-              className="w-32 h-12"
-            ></img>
+            <img src={Logo} className="w-32 h-16 object-cover"></img>
           </a>
         </div>
         <div className="flex md:order-2">
