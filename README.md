@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# React web template with Tailwind css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a personal portfolio template that I rebuild it with React.js, HTML, Tailwind css and other libraries. I just redo the Home and Contact page. You can see the full template on https://www.tailwindawesome.com/resources/jane/demo.
 
-## Available Scripts
+## Library and technologies
 
-In the project directory, you can run:
+- Tailwind css
+- react-router-dom
+- react-hook-form
+- react-icons
+
+### Screenshots
+
+<img src="./screen1.png" style="width:300px;margin-right:5px"/><img src="./screen2.png" style="width:300px;"/><img src="./screen3.png" style="width:300px;"/>
 
 ### `npm start`
 
