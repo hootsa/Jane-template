@@ -1,6 +1,7 @@
 import React from "react";
-import navigations from "../../constants/navigations";
+import navigations from "../../../constants/navigations";
 import Dropdown from "./dropdown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -24,13 +25,13 @@ const Header = () => {
         </div>
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 lg:gap-x-12 gap-x-4 m-auto">
           {navigations.map((item) => (
-            <a
+            <Link
+              to={item.href}
               key={item.id}
-              href={item.href}
               className="text-lg font-normal leading-8 cursor-pointer transition duration-100 after:block after:w-4 after:h-0.5 after:m-auto hover:after:bg-gray-400"
             >
               {item.title}
-            </a>
+            </Link>
           ))}
 
           <Dropdown />
